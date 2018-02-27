@@ -48,7 +48,7 @@ mkdir -p "$INSTALL_DIR";
 
 echo "$(FG Copying scripts...)";
 for FILE in $(ls ./src); do
-    cp -v "./src/${FILE}" "$INSTALL_DIR";
+    cp -fv --preserve "./src/${FILE}" "$INSTALL_DIR";
 done;
 
 
@@ -109,7 +109,3 @@ mv -f "$TEMP_CRON_FILE" "$CRON_FILE"
 rm -rf "$TEMP_CRON_FILE"  "${TEMP_CRON_FILE}.grep";
 
 echo "Done..."
-
-
-
-
