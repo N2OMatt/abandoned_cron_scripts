@@ -21,7 +21,7 @@
 ## Imports                                                                    ##
 ##----------------------------------------------------------------------------##
 source /usr/local/src/acow_shellscript_utils.sh
-source ./report.sh
+source /usr/local/bin/n2omatt_cron_scripts/report.sh
 
 
 ##----------------------------------------------------------------------------##
